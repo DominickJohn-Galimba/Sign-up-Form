@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster');
+@import url('https://fonts.googleapis.com/css?family=Bungee Spice');
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.left-part {
+    display: flex;
+    justify-content:center;
+    align-items:flex-start;
+    position: relative;
+    width: 38vw;
+    height: clamp(395px, 120vh, 400px);
+    background-image: url(bg_image.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding-top: 5rem;
+}
+
+.right-part {
+    width: 58vw;
+    height: 100vh;
+    background-color: rgb(255, 255, 255);
+}
+
+.odin {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: clamp(50px, 29vh, 400px);
+    background-color: rgb(0, 233, 39);
+    opacity: .6;  
+    border-style:dashed;
+    border-right: none;
+}
+
+.odin img {
+    position:relative;
+    width: 9.8vw;
+    height: 29.1vh;
+}
+.odin h2 {
+    font-family: 'Lobster', sans-serif;
+    font-size: 8vw;
+    color: white;
+}
+
+.right-part p{
+    font-weight: 800;
+    font-size: 2.3vw;
+    text-align: left;
+    margin: 50px  20px 20px 10px;
+}
+.right-part span {
+    font-family: 'Bungee Spice', sans-serif;
+}
+
+.right-part form {
+    position: relative;
+    width: 105%;
+    height: 60vh;
+    box-shadow: 4px 4px 4px 4px #757474;
+    margin-bottom: 5%;
+ 
+}
+.right-part h1 {
+    margin-left: 1.2em;
+    font-size: 3vw;
+}
+
+.right-part ul {
+    position: absolute;
+    display: flex;
+    justify-content:left;
+    align-items:flex-start;
+    width: clamp(198px, 60.9vw, 800px);
+    height: clamp(100px, 40vh, 500px);
+    flex-wrap: wrap;
+    margin: 0 auto;
+    list-style: none;
+    padding: 0;
+    
+
+}
+
+.right-part li {
+    padding-top: 1vw;
+    padding-right: 5%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.right-part label {
+    display: block;
+    font-size: calc(0.3rem + 0.5vw);
+}
+
+.right-part input {
+    width: clamp(70px, 18vw, 200px);
+    height: max(2vw, 10px);
+    border: 2px solid #E5E7EB;
+    
+}
+
+.right-part li:nth-child(odd) {
+    margin-left: 5%;
+}
+
+.right-part input:focus{
+    border: 2px solid blue;
+    outline: none;
+    box-shadow: 3px 3px 2px 1px lightblue;
+}
+
+button {
+    width: clamp(80px, 12vw, 250px);
+    height: clamp(12px, 8vh, 250px);
+    margin: 0 0 0.2rem .5rem;
+    background-color: #596D48;
+    font-weight: 600;
+    color: white;
+    font-size: calc(0.5rem + 0.2vw);
+    border-radius: 6px 6px;
+    outline: none;
+}
+.right-part a {
+    color:#596D48;
+    text-decoration: none;
+}
+.right-part h3 {
+    margin-left: 1em;
+    font-size: calc(.6rem + 0.3vw);
+}
+
+.right-part input[type="password"]:invalid {
+    border-color: red;
+    outline: none;
+    content: "hello";
+}
+.right-part .error {
+    position: relative;
+    top:-5vw;
+    left: 1.4vw;
+    font-size: 1vw;
+    color: red;
+    margin: 0px;
+}
+.right-part input::placeholder {
+    font-size: calc(0.3rem + 0.5vw);
+}
